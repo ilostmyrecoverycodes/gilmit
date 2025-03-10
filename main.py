@@ -6,9 +6,7 @@ class file_version_system:
         self.files = OrderedMap()
 
     def save(self, filename, new_text):
-        """
-        Save a new version of a file.
-        """
+        
         # Check if the file already exists, if not, initialize a new list of versions
         if filename not in self.files:
             self.files[filename] = []
